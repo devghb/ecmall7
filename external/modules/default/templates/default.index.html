@@ -1,0 +1,10 @@
+{include file=header.html}
+测试{$tip}|{$name|default:1}
+<br>
+{foreach from=$array item=val name=van}
+ {$val}|{$smarty.foreach.van.iteration}<br>
+{/foreach} 
+<br>
+{$smarty.get.module|default:1} 
+<br>
+{$time|date:Y-m-d}
