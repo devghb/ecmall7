@@ -27,6 +27,11 @@ class Index extends DefaultModule
      */
     public function index_index()
     {
+        //http://test.artxun.cn/aaa/aaa/aaa/wap_tool_CreateBidOrder?goods_id=1156&mid=7de2fba851118fbf7ddce99eca7537e6
+        //goods_id : 拍品id
+//mid : md5(goods_id.'YPWJCreateBidOrder')
+        echo "http://test.artxun.cn/aaa/aaa/aaa/wap_tool_CreateBidOrder?goods_id=1405&mid=".md5('1405YPWJCreateBidOrder');
+        return;
         echo "session相关:<br>";
         $_SESSION['name'] = '小明';//写
         var_dump($_SESSION['name']);//读
